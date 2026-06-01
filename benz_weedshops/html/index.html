@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Weed Factory UI</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+  <div id="app" class="hidden">
+    <div class="panel">
+      <div class="topbar">
+        <div>
+          <div id="title" class="title">Weed Factory</div>
+          <div id="subtitle" class="subtitle">Select an option</div>
+        </div>
+        <button id="closeBtn" class="iconBtn">×</button>
+      </div>
+
+      <div id="menuView" class="view">
+        <div id="options" class="options"></div>
+        <div class="footer">
+          <button id="backBtn" class="secondaryBtn">Back / Close</button>
+        </div>
+      </div>
+
+      <form id="promptView" class="view hidden">
+        <div id="fields" class="fields"></div>
+        <div class="footer two">
+          <button type="button" id="cancelPrompt" class="secondaryBtn">Cancel</button>
+          <button type="submit" class="primaryBtn">Confirm</button>
+        </div>
+      </form>
+    </div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
